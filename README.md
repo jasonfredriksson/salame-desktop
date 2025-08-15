@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# Salame Market
 
-## Project info
+A modern web application for market data visualization and analysis.
 
-**URL**: https://lovable.dev/projects/6d7b77d2-a146-4404-84e1-a029e7d02886
+## Getting Started
 
-## How can I edit this code?
+### Prerequisites
 
-There are several ways of editing your application.
+- [Node.js](https://nodejs.org/) (v16 or later recommended)
+- npm (comes with Node.js) or [yarn](https://yarnpkg.com/)
 
-**Use Lovable**
+You can install Node.js and npm using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) (recommended for managing Node versions).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6d7b77d2-a146-4404-84e1-a029e7d02886) and start prompting.
+### Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+Follow these steps to get the application running on your local machine:
+
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory
+cd salame-market-vivo-main
+
+# Step 3: Install the necessary dependencies
+npm install
+# OR if using yarn
+yarn install
+
+# Step 4: Start the development server
+npm run dev
+# OR if using yarn
+yarn dev
+```
+
+The application should now be running at `http://localhost:5173` (or another port if 5173 is in use).
+
+### Development Options
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Work locally using any code editor or IDE of your choice.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Edit directly in GitHub**
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Navigate to the desired file(s)
+- Click the "Edit" button (pencil icon) at the top right of the file view
+- Make your changes and commit them
 
 **Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Navigate to the main page of your repository
+- Click on the "Code" button (green button) near the top right
+- Select the "Codespaces" tab
+- Click on "New codespace" to launch a new Codespace environment
+- Edit files directly within the Codespace and commit and push your changes once you're done
 
-## What technologies are used for this project?
+## Technology Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [React](https://reactjs.org/) - UI library
+- [shadcn-ui](https://ui.shadcn.com/) - UI component library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 
-## How can I deploy this project?
+## Building for Production
 
-Simply open [Lovable](https://lovable.dev/projects/6d7b77d2-a146-4404-84e1-a029e7d02886) and click on Share -> Publish.
+To create a production build:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# Build the application
+npm run build
+# OR if using yarn
+yarn build
+```
 
-Yes, you can!
+This will generate optimized files in the `dist` directory that can be deployed to any static hosting service.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+You can deploy this application to any static site hosting service like:
+
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Firebase Hosting](https://firebase.google.com/products/hosting)
+
+Most services can be connected to your GitHub repository for automatic deployments when you push changes.
+
+## Project Structure
+
+```
+salame-market-vivo-main/
+├── public/            # Static assets
+├── src/               # Source code
+│   ├── assets/        # Images and other assets
+│   ├── components/    # React components
+│   ├── lib/           # Utility functions
+│   ├── styles/        # Global styles
+│   ├── App.tsx        # Main application component
+│   └── main.tsx       # Application entry point
+├── index.html         # HTML template
+├── package.json       # Project dependencies and scripts
+└── README.md          # This file
+```
